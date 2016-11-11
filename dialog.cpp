@@ -19,8 +19,13 @@ Dialog::~Dialog()
 
 void Dialog::on_acceptButton_clicked()
 {
-    PPrint pt(6,1,3);
-    this->setWindowTitle(ui->BeginTextEdit->toPlainText());
+    PPrint pt;
+    //this->setWindowTitle(ui->BeginTextEdit->toPlainText());
+    pt.setStartPageNum(ui->startPageLineEdit->text().toInt());
+    pt.setEndPageNum(ui->EndTextLineEdit->text().toInt());
+    pt.setIsReverse(ui->reverseCheckBox->isChecked());//check if you wanna print from end to begin
+   // pt.setIsOdd(ui->);
+
     pt.PProcess();
 }
 

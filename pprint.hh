@@ -19,10 +19,18 @@ private:
     int totalPageNum;
     int startPageNum;
     int endPageNum;
+    bool isReverse;
+    int isOdd;
+
 
 public:
-    PPrint(int total,int start,int end);
+    PPrint();
     void PProcess();//process the print
+    void setTotalPageNum(int num);
+    void setStartPageNum(int num);
+    void setEndPageNum(int num);
+    void setIsReverse(bool num);
+    void setIsOdd(int num);
 
 };
 
