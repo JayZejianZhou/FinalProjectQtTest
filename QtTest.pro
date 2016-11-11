@@ -13,9 +13,13 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        dialog.cpp
+        dialog.cpp \
+    pprint.cpp
 
 HEADERS  += dialog.h \
-    pprint.hh
+    pprint.hh \
+    includes.hh
 
 FORMS    += dialog.ui
+
+RESOURCES +=

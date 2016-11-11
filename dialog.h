@@ -15,6 +15,12 @@ public:
     explicit Dialog(QWidget *parent = 0);
     ~Dialog();
 
+private slots:
+    void on_acceptButton_clicked();
+
+    void on_cancelButton_clicked();
+
+
 private:
     Ui::Dialog *ui;
 };
