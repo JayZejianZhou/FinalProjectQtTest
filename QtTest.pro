@@ -5,7 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
-
+QT       += printsupport
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = QtTest
@@ -15,6 +15,7 @@ TEMPLATE = app
 SOURCES += main.cpp\
         dialog.cpp
 
-HEADERS  += dialog.h
+HEADERS  += dialog.h \
+    pprint.hh
 
 FORMS    += dialog.ui
