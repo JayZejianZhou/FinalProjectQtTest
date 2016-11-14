@@ -1,6 +1,6 @@
 /*This is the main process class, It can procss and distribute different objects
  * Author: @Zejian Zhou(Github:JayZejianZhou) @Fan Yang(Github:fyang14)
- * Edited at 11/10,2016
+ * Edited at 13/10,2016
  */
 
 
@@ -21,6 +21,7 @@ private:
     int endPageNum;
     bool isReverse;
     int isOdd;
+    bool isPDF;//flag, if the user wanna print out as PDF
 
 
 public:
@@ -31,6 +32,8 @@ public:
     void setEndPageNum(int num);
     void setIsReverse(bool num);
     void setIsOdd(int num);
+    void setIsPDF(bool is);
+    void print();//deal with specific print situation @Zejian
 
 };
 

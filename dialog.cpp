@@ -24,6 +24,7 @@ void Dialog::on_acceptButton_clicked()
     pt.setStartPageNum(ui->startPageLineEdit->text().toInt());
     pt.setEndPageNum(ui->EndTextLineEdit->text().toInt());
     pt.setIsReverse(ui->reverseCheckBox->isChecked());//check if you wanna print from end to begin
+    pt.setIsPDF(ui->pdfCheckBox->isChecked());//check if the user wanna print out as PDF directly @Zejian
    // pt.setIsOdd(ui->);
 
     pt.PProcess();
